@@ -12,5 +12,9 @@ public class Demo01ObjectMethodReference {
             MethodReObject obj = new MethodReObject();
             obj.printUpperString(s);
         });
+        MethodReObject obj = new MethodReObject();
+
+        printString(obj::printUpperString);
+
     }
 }
